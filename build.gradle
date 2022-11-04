@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.7.5'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 	id 'java'
+    id 'application'
 }
 
 group = 'robdolle'
@@ -20,3 +21,6 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+
+mainClassName = 'robdolle.calculator.CalculatorApplication'
